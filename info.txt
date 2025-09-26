@@ -1,0 +1,43 @@
+source
+code
+*.c =========> *.exe 
+*.h  compile
+
+
+*.py (numpy)
+
+
+GCC (-std=c23) 
+	https://gcc.gnu.org/
+	https://github.com/skeeto/w64devkit/releases
+CLang + LLVM
+MSVC
+Intel C++
+
+GDB
+
+CMake
+
+IDE:
+VSCode + C/C++ Extension (GCC MSVC)
+	https://code.visualstudio.com/
+CodeBlocks
+	https://www.codeblocks.org/
+Eclipse for C/C++ Dev
+	https://www.eclipse.org/
+MS VisualStudio
+	https://visualstudio.microsoft.com/ru/
+CLion (JetBrains)
+	https://www.jetbrains.com/
+Dev-C++
+	https://www.bloodshed.net/
+
+sizeof(char) <= sizeof(short) <=
+sizeof(int) <= sizeof(long) <=
+sizeof(long long)
+
+
+
+
+
+
