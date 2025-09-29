@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define _USE_MATH_DEFINES
 #include <math.h>
 
@@ -46,6 +47,8 @@ int main(int argc, char *argv[]) {
 	x = 2.5;
 	
 	printf("Hello world!\n");
+	
+	
 	printf("n = %d!\n", n);
 	printf("k = %d!\n", k);
 	printf("name = %s!\n", name);
@@ -53,7 +56,7 @@ int main(int argc, char *argv[]) {
 	printf("pi = %lf\n", M_PI);
 	printf("sizeof(char) = %d\n", sizeof(char));
 	printf("sizeof(short) = %d\n", sizeof(short));
-	printf("sizeof(int) = %d\n", sizeof(int));
+	printf("sizeof(int) = %d\n", sizeof(2+3));
 	printf("sizeof(long) = %d\n", sizeof(long));
 	printf("sizeof(long long) = %d\n", sizeof(long long));
 	printf("sizeof(float) = %d\n", sizeof(float));
