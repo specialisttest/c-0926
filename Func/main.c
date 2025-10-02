@@ -40,6 +40,8 @@ void test2(int* pa) {
 }
 
 int main(int argc, char *argv[]) {
+	puts(argv[0]);
+	
 	{
 		int a = 10;
 		printf("Address a in main 1: %p\n", &a);
@@ -66,6 +68,17 @@ int main(int argc, char *argv[]) {
 	printf("avg = %lf\n", my_average(10, 11) );
 	
 	printf("6! = %d\n", factorial(6) );
+	
+	int m[] = {15, 18, 15, 17, 3, 21, 1000, 18, 30, 15, 17, 1000, 21, 18, 34, 12};
+	printf("average_m(15, 18, 15, 17, 3, 21, 1000, 18, 30, 15, 17, 1000, 21, 18, 34, 12) = %.2f\n",
+		average_m(sizeof(m) / sizeof(int), m));
+	
+	int m2[] = {15, 18, 15, 17};
+	printf("average_m(15, 18, 15, 17) = %.2f\n",
+		average_m(sizeof(m2) / sizeof(int), m2));
+
+	printf("average_n(15, 18, 15, 17) = %.2f\n",
+		average_n(4, 15, 18, 15, 17) );
 	
 	
 	return 0;
