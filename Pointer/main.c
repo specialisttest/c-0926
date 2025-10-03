@@ -125,6 +125,21 @@ int main(int argc, char *argv[]) {
 		
 	puts("");
 	
+	printf("pz %p\n", pz);
+	//pz = realloc(NULL, 2'000'000*sizeof(int)); // выделение памяти (также как и malloc)
+	//pz = realloc(pz, 2'000'000*sizeof(int)); // перераспределение памяти
+	pz = calloc(2'000'000, sizeof(int)); // malloc + zero memory!
+	if (pz == NULL) {
+		puts("Out of memory");
+		exit(-1); // return -1; // from main
+	}
+	
+	
+	printf("pz %p\n", pz);
+	printf("*pz %d\n", pz[0]);
+	printf("*pz %d\n", pz[1]);
+	
+	
 	free(pz);
 	// *pz // unsafe
 	pz = nullptr; // NULL
